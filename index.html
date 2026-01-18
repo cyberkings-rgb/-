@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cyberkings</title>
+
+  <style>
+    html {
+      scroll-behavior: smooth; /* Smooth scrolling */
+    }
+
+    body {
+      background-color: black;
+      color: lime;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #111;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #0f0;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: cyan;
+      text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    }
+
+    section {
+      padding: 60px 20px;
+      border-bottom: 2px solid #0f0;
+      min-height: 300px;
+    }
+
+    h1, h2 {
+      text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+    }
+
+    p {
+      color: #0f0;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    button {
+      background-color: #0f0;
+      color: black;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      box-shadow: 0 0 10px #0f0;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: cyan;
+      box-shadow: 0 0 15px cyan;
+    }
+
+    img {
+      width: 120px;
+      margin-top: 10px;
+      filter: drop-shadow(0 0 10px #0f0);
+      transition: 0.3s;
+    }
+
+    img:hover {
+      filter: drop-shadow(0 0 15px cyan);
+    }
+
+  </style>
+
+</head>
+<body>
+
+<!-- NAVIGATION MENU -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME SECTION -->
+<section id="home">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo">
+  <h1>CYBERKINGS</h1>
+  <p>Welcome to the hacker-style Cyberkings website!</p>
+  <button onclick="alert('Welcome to Cyberkings!')">JOIN US</button>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+  <h2>About Cyberkings</h2>
+  <p>Cyberkings is a group for free internet and tech lovers. Hack the internet legally 😉</p>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: cyberkings@example.com</p>
+  <button onclick="alert('Message sent!')">Send Message</button>
+</section>
+
+</body>
+</html>
